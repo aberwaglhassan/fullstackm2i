@@ -1,0 +1,12 @@
+{{  include('header.html.twig', {} ) }}
+
+<h2>Catalogue:</h2>
+
+{% for current in catalog %}
+
+    {{  include('product_thumb.html.twig', { 'product': current } ) }}
+    
+{% endfor %}
+
+
+{{  include('footer.html.twig', {} ) }}
